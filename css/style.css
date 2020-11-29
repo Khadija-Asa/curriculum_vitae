@@ -5,9 +5,8 @@
   padding: 0;
 }
 
-
 .ham {
-  background-color: transparent;
+  background-color: white;
   background-image: url("/img/menu_close.png");
   background-size: 100%;
   border: none;
@@ -22,6 +21,7 @@
 
 .showClose {
   background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+  background-color: transparent;
 }
 
 .navbar {
@@ -58,8 +58,8 @@
   font-size: 1.2rem;
 }
 
-.navbar ul li a:hover, .navbar ul li a:focus {
-  border-bottom: 2px solid white;
+.navbar ul li a:hover, .burger-menu ul li a:focus {
+  border-bottom: 1px solid white;
 }
 
 hr {
