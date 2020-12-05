@@ -2,10 +2,12 @@
   box-sizing: border-box;
   font-family: 'Rosarivo';
   margin: 0;
-  padding: 2px;
+  padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+
+/*MENU BURGER*/
 
 .ham {
   background-color: transparent;
@@ -15,6 +17,7 @@
   cursor: pointer;
   position: absolute;
   right: 20px;
+  top: 13px;
   width: 30px;
   height: 30px;
   z-index: 1000;
@@ -29,7 +32,7 @@
   left: 0;
   background: #25887C;
   width: 100vw;
-  height: 80vh;
+  max-height: 100vh;
   overflow: hidden;
   color: white;
   transform: translateY(-150%);
@@ -66,12 +69,85 @@ hr {
   width: 50px;
 }
 
-.icon {
-  color: #25887C;
-  font-size: 18px;
-  padding: 12px;
+/*NAVBAR*/
+
+.nav-bar {
+  display: flex;
+  justify-items: center;
+  margin-left: 15px;
+  position: absolute;
 }
 
+.icon {
+  color: #25887C;
+  font-size: 14px;
+  padding: 12px;
+  position: relative;
+  top: 9px;
+  width: 100%;
+}
 
+.navigation {
+  display: none;
+}
 
+@media only screen and (min-width: 767px) {
+  .nav-bar {
+    margin-left: 50px;
+    position: absolute;
+  }
+  
+  .icon {
+    color: #25887C;
+    font-size: 22px;
+    margin-left: 26px;
+    top: 5px;
+  }
+  .navigation {
+    display: none;
+  }
+}
+
+@media  only screen and (min-width: 992px) {
+  .ham,
+  .navbar,
+  .nav-bar {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .menu {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 90px;
+  }
+  h1 {
+    color: #25887C;
+    flex: auto;
+    font-size: 24px;
+    margin-left: 95px;
+    margin-top: 25px;
+  }
+  .name {
+    margin-left: 45px;
+  }
+  a {
+    color: black;
+    margin: 20px;
+    font-size: 22;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a:hover {
+    color: #25887C;
+    text-decoration: underline;
+  }
+  .home-icon {
+    color: #25887C;
+  }
+}
 
