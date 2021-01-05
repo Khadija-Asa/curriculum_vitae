@@ -30,7 +30,7 @@
 
 .navbar {
   left: 0;
-  background: #25887C;
+  background: #25887c;
   width: 100vw;
   max-height: 100vh;
   overflow: hidden;
@@ -46,7 +46,7 @@
 
 .navbar ul {
   width: 100vw;
-  height: 80vh;
+  height: 50vh;
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
@@ -74,17 +74,16 @@ hr {
 .nav-bar {
   display: flex;
   justify-items: center;
-  margin-left: 15px;
+  margin-left: 30px;
   position: absolute;
 }
 
-.icon {
+.nav-bar a {
   color: #25887C;
-  font-size: 14px;
+  font-size: 18px;
   padding: 12px;
   position: relative;
-  top: 9px;
-  width: 100%;
+  top: 5px;
 }
 
 .navigation {
@@ -96,11 +95,10 @@ hr {
     margin-left: 50px;
     position: absolute;
   }
-  
-  .icon {
+  .nav-bar a {
     color: #25887C;
     font-size: 22px;
-    margin-left: 26px;
+    margin-left: 40px;
     top: 5px;
   }
   .navigation {
@@ -151,3 +149,63 @@ hr {
   }
 }
 
+/*CONTENT*/
+
+.main-image img {
+  display: block;
+  filter: drop-shadow(5px 5px 0.15rem #25887C);
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  width: 70%;
+}
+
+.title {
+  line-height: 28px;
+  margin-left: 40px;
+}
+
+.title h2,
+h3 {
+  color: #25887c;
+}
+
+.title h3 {
+  font-size: 18px;
+}
+
+.title p {
+  font-size: 12px;
+}
+
+.colored {
+  color: #25887c;
+}
+
+@media only screen and (min-width: 767px) {
+  .title {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-image img {
+    margin-left: 400px;
+    position: absolute;
+    width: 50%;
+  }
+  .title {
+    position: relative;
+    padding-top: 160px;
+    padding-left: 260px;
+  }
+  .title h2 {
+    display: none;
+  }
+  .title h3 {
+    font-size: 22px;
+  }
+  .title p {
+    font-size: 16px;
+  }
+}

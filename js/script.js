@@ -6,3 +6,4 @@ function  burger (){
   nav.classList.toggle("showNav");
   button.classList.toggle("showClose");
 }
+
