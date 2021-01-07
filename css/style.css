@@ -29,15 +29,13 @@
 }
 
 .navbar {
-  left: 0;
   background: #25887c;
-  width: 100vw;
-  max-height: 100vh;
-  overflow: hidden;
   color: white;
-  transform: translateY(-150%);
-  transition: transform 0.30s ease;
+  left: 0;
   position: absolute;
+  transform: translateY(-150%);
+  transition: transform 0.60s ease;
+  width: 100vw;
 }
 
 .showNav {
@@ -136,7 +134,6 @@ hr {
   a {
     color: black;
     margin: 20px;
-    font-size: 22;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -144,12 +141,17 @@ hr {
     color: #25887C;
     text-decoration: underline;
   }
-  .home-icon {
+  .home-icon i {
     color: #25887C;
+    font-size: 18px;
   }
 }
 
 /*CONTENT*/
+
+.main {
+  background-color: #ECFAF8;
+}
 
 .main-image img {
   display: block;
@@ -183,12 +185,18 @@ h3 {
 }
 
 @media only screen and (min-width: 767px) {
+  .main {
+    height: 100vh;
+  }
   .title {
     margin-left: 60px;
   }
 }
 
 @media only screen and (min-width: 992px) {
+  .main {
+    height: 100vh;
+  }
   .main-image img {
     margin-left: 400px;
     position: absolute;
@@ -208,4 +216,42 @@ h3 {
   .title p {
     font-size: 16px;
   }
+}
+
+/*FOOTER*/
+
+hr {
+  color: #25887c;
+  width: 100%;
+}
+
+.social-medias {
+  align-self: center;
+  background-color: #25887c;
+  display: flex;
+}
+
+.social-medias img {
+  width: 60%;
+}
+
+.social-medias a {
+  align-items: center;
+  border-radius: 100px;
+  background: #25887C;
+  box-shadow: inset -7px 7px 14px #0f3632, 
+              inset 7px -7px 14px #3bdac6;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+
+@media only screen and (min-width: 767px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+  
 }
