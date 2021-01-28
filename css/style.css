@@ -11,7 +11,7 @@
 
 .ham {
   background-color: transparent;
-  background-image: url("/img/menu-burger-close.webp");
+  background-image: url("/img/ham-close.png");
   background-size: 100%;
   border: none;
   cursor: pointer;
@@ -62,7 +62,7 @@
   border-bottom: 1px solid white;
 }
 
-hr {
+.navbar hr {
   color: white;
   width: 50px;
 }
@@ -81,7 +81,7 @@ hr {
   font-size: 18px;
   padding: 12px;
   position: relative;
-  top: 5px;
+  top: 6px;
 }
 
 .navigation {
@@ -95,9 +95,9 @@ hr {
   }
   .nav-bar a {
     color: #25887C;
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 40px;
-    top: 5px;
+    top: 8px;
   }
   .navigation {
     display: none;
@@ -147,6 +147,10 @@ hr {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  
+}
+
 /*CONTENT*/
 
 .main {
@@ -155,7 +159,7 @@ hr {
 
 .main-image img {
   display: block;
-  filter: drop-shadow(5px 5px 0.15rem #25887C);
+  /* filter: drop-shadow(8 8 0.15rem #25887C); */
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 20px;
@@ -218,6 +222,10 @@ h3 {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  
+}
+
 /*FOOTER*/
 
 hr {
@@ -225,14 +233,19 @@ hr {
   width: 100%;
 }
 
-.social-medias {
-  align-self: center;
+footer {
   background-color: #25887c;
+}
+
+.social-medias {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 .social-medias img {
-  width: 60%;
+  width: 50%;
 }
 
 .social-medias a {
@@ -244,14 +257,29 @@ hr {
   display: flex;
   height: 30px;
   justify-content: center;
+  margin-left: 8px;
   width: 30px;
 }
 
 
-@media only screen and (min-width: 767px) {
 
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+  .social-medias a {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
   
 }
